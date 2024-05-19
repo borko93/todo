@@ -31,7 +31,7 @@ def index(request):
 def remove(request, item_id):
 	item = Todo.objects.get(id=item_id)
 	item.delete()
-	messages.info(request, "Ставка обрисанаа!")
+	messages.info(request, "Ставка обрисана!")
 	return redirect('todo')
 
 
